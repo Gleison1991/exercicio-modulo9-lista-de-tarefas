@@ -7,6 +7,9 @@ $(document).ready(function() {
         const novaTarefa = $('<li></li>');
         $(novaTarefa).html(tarefa);
         $(novaTarefa).appendTo("ul");
+        $("li").click(function(){
+            $(this).addClass("riscar");
+        });
         
         $('#tarefa').val('');
     });
